@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>{{producto.nombre}}</h1>
+    <div class="card-body">
+      <img class="card-img-top" src="http://placehold.it/700x300" alt=""><br>
+      <br>
+      <h5>S/ {{producto.precio}}</h5>
+      <p class="card-text">Categoria: {{producto.categoria.nombre}}</p>
+    </div>
+
+{% endblock %}
